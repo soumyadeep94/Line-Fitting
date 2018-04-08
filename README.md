@@ -16,6 +16,20 @@ RANSAC METHOD
 	      **1-p = (1-u)<sup>m</sup>** 
 				
   **N = log(1-p)/log(1-(1-v)<sup>m</sup>**
+  
+  ***3D Line***
+  
+  
+  ![alt text](https://github.com/soumyadeep94/Line-Fitting/blob/master/3d%20Line.gif)
+  
+  Let *r<sub>0</sub>* and *r* be the position vectors for P<sub>0</sub> and P respectively. Let us define *a* to be a vector with representation *P<sub>0</sub>P*.  *v* is the vector parallel to the line. We can write *r* as
+  
+  *r = r<sub>0</sub> + a*
+  
+  Since vector *a* and *v* are parallel. So, *a = tv*
+  
+  Thus the vector form of the equation of the line is   ***r = r<sub>0</sub> + tv***
+  
 	
 	
   

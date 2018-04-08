@@ -1,4 +1,4 @@
-# Line-Fitting using RANSAC Algorithm
+# **Line-Fitting using RANSAC Algorithm**
 
 RANSAC METHOD
 ---

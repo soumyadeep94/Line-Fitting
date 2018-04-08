@@ -40,6 +40,11 @@ RANSAC METHOD
  
  ![alt text](https://github.com/soumyadeep94/Line-Fitting/blob/master/vector_line.gif)
  
+ The squared distance between a point on the line with parameter t and a point x<sub>0</sub> = (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) is
+	
+	
+	
+ 
  
   
   

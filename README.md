@@ -2,6 +2,7 @@
 
 RANSAC METHOD
 ---
+
 - RANSAC or (*RANDOM SAMPLE CONSENSUS*) is an iterative method to estimate parameters of a mathematical model from a set of observe data which contain the outliers.
 - The randomly chosen points are called *hypothetical inliers* and all other points are tested against this fitted model.
 - Those points that fit the estimated model well are considered as a part of the consensus set.
@@ -29,6 +30,20 @@ RANSAC METHOD
   Since vector *a* and *v* are parallel. So, *a = tv*
   
   Thus the vector form of the equation of the line is   ***r = r<sub>0</sub> + tv***
+  
+  **(x<sub>0</sub>,y<sub>0</sub>,z<sub>0</sub>)** is the **position vector** of the line.
+  ***(a,b,c)*** is the **direction vector** of the line.
+  
+ ## **Distance of a point from line**
+ 
+ 
+  
+  
+   
+       
+  
+  
+  
   
 	
 	

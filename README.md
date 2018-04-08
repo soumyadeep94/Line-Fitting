@@ -41,6 +41,34 @@ RANSAC METHOD
  ![alt text](https://github.com/soumyadeep94/Line-Fitting/blob/master/vector_line.gif)
  
  The squared distance between a point on the line with parameter t and a point x<sub>0</sub> = (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) is
+ 
+ d<sup>2</sup> = [(x<sub>1</sub> - x<sub>0</sub>) + (x<sub>2</sub> - x<sub>1</sub>)t]<sup>2</sup> + [(y<sub>1</sub> - y<sub>0</sub>) + (y<sub>2</sub> - y<sub>1</sub>)t]<sup>2</sup> + [(z<sub>1</sub> - z<sub>0</sub>) + (z<sub>2</sub> - z<sub>1</sub>)t]<sup>2</sup>
+	
+Minimizing the distance, solving for t and using the vector quadruple product (AxB)<sup>2</sup> = A<sup>2</sup>B<sup>2</sup> - (A.B)<sup>2</sup>, we obtain distance,
+
+
+d = |(x<sub>0</sub> - x<sub>1</sub>) x (x<sub>0</sub> - x<sub>2</sub>)|/|(x<sub>2</sub> - x<sub>0</sub>)|
+
+## ALGORITHM
+- We first generate indices vector of the size same as that of the dataset. This
+vector will extract the points from the dataset. We extract the first two points
+and consider them as *hypothetical inliers(maybe_pts)* as only 2 points are
+sufficient to describe a line. The rest of the points are said to be the *test
+points(test_pts)*.
+- We shuffle this indices vector each iteration randomly so as to get different
+hypothetical inliers each time.
+- From the hypothetical inliers, we calculate the **position vector** and the
+**direction vector** of the estimated line model.
+- We, then test all the test points over this estimated model and calculate the
+distance of it from this line using the formula shown above.
+- If the distance is less than the threshold value, it is classified as inliers or else
+as outliers and we calculate the **inlier ratio** for that model.
+- We calculate the **average of the sum of all the test points** for this model.
+- We iterate this algorithm for a fixed number of N, whose value was calculated
+previously. We stop this iteration if we have obtained sufficient number of
+inliers
+- If we don’t get sufficient number of inliers till the end of all iterations, we say
+**“No Model Found!!!”**.
 	
 	
 	

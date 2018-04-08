@@ -70,6 +70,9 @@ inliers
 - If we don’t get sufficient number of inliers till the end of all iterations, we say
 **“No Model Found!!!”**.
 
+## SOFTWARE
+- [Qt 5.9](https://www1.qt.io/qt5-9/)
+
 ## DEPENDENCIES
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page#Download)
    (Header only matrix math library)

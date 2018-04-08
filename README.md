@@ -69,6 +69,15 @@ previously. We stop this iteration if we have obtained sufficient number of
 inliers
 - If we don’t get sufficient number of inliers till the end of all iterations, we say
 **“No Model Found!!!”**.
+
+## DEPENDENCIES
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page#Download)
+   (Header only matrix math library)
+   
+ ## REFERERENCES
+ - To know more about equation of lines click [here](http://tutorial.math.lamar.edu/Classes/CalcIII/EqnsOfLines.aspx)
+ - To find more about the math regarding distance of point from line..let's dive [here](mathworld.wolfram.com/Point-LineDistance3-Dimensional.html)
+ - I recommend [Alexey Abramov's Blog post](https://salzis.wordpress.com/2014/06/10/robust-linear-model-estimation-using-ransac-python-implementation/) regarding the Python implementation of Line Fit estimation
 	
 	
 	

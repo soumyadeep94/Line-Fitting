@@ -36,6 +36,10 @@ RANSAC METHOD
   
  ## **Distance of a point from line**
  
+ The vector v along the line specified by 2 points *x<sub>1</sub> = (x<sub>1</sub>, y<sub>1</sub>, z<sub>1</sub>)*, *x<sub>2</sub> = (x<sub>2</sub>, y<sub>2</sub>, z<sub>2</sub>)* is given by
+ 
+ ![alt text](https://github.com/soumyadeep94/Line-Fitting/blob/master/vector_line.gif)
+ 
  
   
   
